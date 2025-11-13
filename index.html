@@ -2255,24 +2255,88 @@ Liferay.on(
     <div>
         <div class="titolo-pers-pers mb7">WALTON MARKET LTD</div>
 
-        <div class="sfondo-pers-pers divContent brdCeleste">
-    <ul>
-        <li><strong>Italian investment firm:</strong> <span class="bold">WALTON MARKET LTD</span></li>
-        <li><strong>LEI code:</strong> 815600W1M2CA0A6D2180</li>
-        <li><strong>Registered office:</strong> PIAZZA DEL DUOMO, 12</li>
-        <li><strong>City:</strong> 20122 MILANO (MI)</li>
-        <li><strong>Country:</strong> ITALIA</li>
-        <li><strong>First registration resolution:</strong> n. 24500 of 15/02/2018</li>
-        <li><strong>Registration no:</strong> 689</li>
-    </ul>
+        <!-- START: Walton Market block - replace the existing sfondo-pers-pers block -->
+<style>
+/* Локальні стилі лише для цього блоку — не чіпаємо глобальні файли */
+.walton-block {
+  border-left: 6px solid #2b67a3; /* синя смужка */
+  padding: 18px 20px;
+  background: #fff;
+  max-width: 820px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #222;
+}
+.walton-block .meta {
+  display: grid;
+  grid-template-columns: 220px 1fr; /* лівий стовпець - підписи, правий - значення */
+  row-gap: 8px;
+  column-gap: 18px;
+  align-items: start;
+  font-size: 14px;
+}
+.walton-block .meta dt {
+  font-weight: 700;
+  color: #333;
+}
+.walton-block .meta dd {
+  margin: 0;
+  font-weight: 400;
+  color: #1b1b1b;
+}
+.walton-block .services-title {
+  margin-top: 14px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+}
+.walton-block .services {
+  margin: 8px 0 0 0;
+  padding-left: 18px;
+  list-style-type: disc;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #333;
+}
+.walton-block .services li {
+  margin-bottom: 8px;
+}
+</style>
 
-    <p><strong>INVESTMENT SERVICES PURSUANT TO LEGISLATIVE DECREE 58/98</strong></p>
+<div class="sfondo-pers-pers divContent brdCeleste walton-block">
+  <dl class="meta" aria-labelledby="walton-heading">
+    <dt>Italian investment firm:</dt>
+    <dd><strong id="walton-heading">WALTON MARKET LTD</strong></dd>
 
-    <ul>
-        <li>• Execution of orders on behalf of clients limited to the subscription and purchase and sale of financial instruments of own issue (D.lgs. n. 129/17 of 03/08/2017)</li>
-        <li>• Investment advice. The authorization was granted subject to the following restrictions: without holding, even temporarily, customers’ liquid balance or financial instruments and without the company itself assuming risk (registration resolution n. 24500 of 15/02/2018)</li>
-    </ul>
+    <dt>LEI code:</dt>
+    <dd>815600W1M2CA0A6D2180</dd>
+
+    <dt>Registered office:</dt>
+    <dd>PIAZZA DEL DUOMO, 12</dd>
+
+    <dt>City:</dt>
+    <dd>20122 MILANO (MI)</dd>
+
+    <dt>Country:</dt>
+    <dd>ITALIA</dd>
+
+    <dt>First registration resolution:</dt>
+    <dd>n. 24500 of 15/02/2018</dd>
+
+    <dt>Registration no:</dt>
+    <dd>689</dd>
+  </dl>
+
+  <div class="services-title">INVESTMENT SERVICES PURSUANT TO LEGISLATIVE DECREE 58/98</div>
+
+  <ul class="services">
+    <li>Execution of orders on behalf of clients limited to the subscription and purchase and sale of financial instruments of own issue (D.lgs. n. 129/17 of 03/08/2017)</li>
+    <li>Investment advice. The authorization was granted subject to the following restrictions: without holding, even temporarily, customers’ liquid balance or financial instruments and without the company itself assuming risk (registration resolution n. 24500 of 15/02/2018)</li>
+  </ul>
 </div>
+<!-- END: Walton Market block -->
+
 
 
 
